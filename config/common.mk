@@ -268,6 +268,9 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
